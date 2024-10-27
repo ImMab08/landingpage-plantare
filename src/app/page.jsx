@@ -1,18 +1,20 @@
 import Beneficios from "@/components/Beneficios/Beneficios";
+import Caracteristicas from "@/components/Caracteristicas/Caracteristicas";
 import Combos from "@/components/Combos/Combos";
 import Garantia from "@/components/Garantia/Garantia";
+import Preguntas from "@/components/Preguntas/Preguntas";
 
 export default function Home() {
   return (
     <section className="flex flex-1 flex-col space-y-10">
       <div className=" flex flex-col items-center space-y-5">
         <div className="text-center mt-10 space-y-4 px-5">
-          <div>
-            <p className="text-primary font-bold text-xl">
+          <div className="">
+            <p className="text-primary font-extrabold text-xl leading-7">
               60 días para decirle adiós a la caída y hola a un cabello fuerte y
               largo
             </p>
-            <p className="text-primary font-bold text-xl">
+            <p className="text-primary font-extrabold text-xl">
               ¡Tu transformación comienza hoy!
             </p>
           </div>
@@ -46,8 +48,6 @@ export default function Home() {
           Comprar ahora
         </button>
       </div>
-
-      <Garantia />
       <Combos />
 
       <div className="flex w-full h-10 items-center justify-center bg-foreground">
@@ -58,10 +58,21 @@ export default function Home() {
         </h2>
       </div>
 
-      <div className=" flex flex-col justify-center items-center space-y-5">
+      <div className=" flex flex-col justify-center items-center space-y-5 px-5">
         <div className="text-center mt-10 space-y-4">
+          <p className="text-primary font-extrabold text-xl leading-7">
+            ⭐ SI DESPUÉS DE 30 DÍAS NO NOTAS EL CAMBIO TE DEVOLVEMOS TU DINERO
+            ⭐
+          </p>
+        </div>
+
+        <div className="text-center mt-10">
           <p className="text-primary font-bold text-2xl">
-            Lorem ipsum dolor sit amet consectetur
+            ¡LA OFERTA ACABARÁ PRONTO!
+          </p>
+          <p className="text-primary font-semibold text-xl">
+            Tenemos existencias limitadas y el descuento caducará{" "}
+            <span className="font-bold">¡pronto!</span>
           </p>
         </div>
 
@@ -69,6 +80,40 @@ export default function Home() {
           ¡QUIERO LO MIO!
         </button>
       </div>
+
+      <div className="flex w-full items-center justify-center bg-foreground px-5 py-2">
+        <h2 className="font-bold text-sm text-white text-center">
+          ¿Qué es el{" "}
+          <span className="text-secondary">
+            {" "}
+            ACEITE DE ESTIMULACIÓN DEL CRECIMIENTO DE PLANTARE{" "}
+          </span>{" "}
+          y cómo
+          <span className="text-secondary"> FUNCIONA</span>?
+        </h2>
+      </div>
+
+      <div className=" flex flex-col px-5">
+        <div className="text-center mt-10 space-y-5">
+          <p className="text-primary font-bold text-xl leading-7">
+            Es un aceite de estimulación capilar 100% natural que combina
+            ancestrales secretos botánicos con la más avanzada tecnología en
+            cuidado capilar. Cada gota está formulada para despertar tus
+            folículos capilares y promover un crecimiento saludable.
+          </p>
+          <p className="text-primary font-extrabold text-xl">
+            PODER NATURAL CONCENTRADO
+          </p>
+          <p className="text-primary font-semibold text-xl">
+            Nuestro aceite combina 15 ingredientes potentes, cada uno
+            seleccionado por sus propiedades específicas:
+          </p>
+        </div>
+      </div>
+
+      <Caracteristicas />
+      <Garantia />
+      <Preguntas />
     </section>
   );
 }

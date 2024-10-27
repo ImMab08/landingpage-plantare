@@ -1,5 +1,3 @@
-import { IconCard, IconCheck, IconSend } from "@/icons";
-
 export const info = [
   {
     id: 1,
