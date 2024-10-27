@@ -35,7 +35,7 @@ export const info = [
     pregunta:
       "¿Puedo utilizarlo si tengo algún proceso químico como keratina, alisadora o tinte?",
     respuesta: [
-      "¡Claro que sí! Al ser un producto 100% natural, no corres el riesgo de que altere el pH de tu cuero cabelludo o dañe la hebra de tu cabello.",
+      "¡Claro que sí! Al ser un producto 100% natural, no corres el riesgo de que altere el PH de tu cuero cabelludo o dañe la hebra de tu cabello.",
     ],
   },
 ];

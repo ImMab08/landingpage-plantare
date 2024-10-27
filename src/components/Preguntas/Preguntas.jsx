@@ -11,12 +11,12 @@ export default function Preguntas() {
   };
 
   return (
-    <section className="max-w-md mx-auto space-y-4">
+    <section className="max-w-md mx-auto space-y-2">
       {info.map((item, index) => (
         <div key={index} className="border rounded-md bg-gray-100">
           <button
             onClick={() => toggleExpand(index)}
-            className="w-full flex items-center justify-between px-4 py-3 font-semibold text-left"
+            className="w-full flex items-center justify-between px-4 py-3 font-semibold text-left border-b-2 border-border"
           >
             <span>{item.pregunta}</span>
             <IconArrowDown
@@ -29,7 +29,7 @@ export default function Preguntas() {
           {expanded === index && (
             <div className="p-4 text-primary bg-gray-100">
               {item.respuesta.map((line, i) => (
-                <p key={i} className="mb-2 last:mb-0">
+                <p key={i} className="mb-2 last:mb-0 leading-5">
                   {line}
                 </p>
               ))}

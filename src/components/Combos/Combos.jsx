@@ -7,15 +7,7 @@ export default function Combos() {
     <section className="">
       <div className="bg-border p-5 space-y-5">
         {info.map(
-          ({
-            id,
-            imagen,
-            titulo,
-            subtitulo,
-            variantes,
-            span,
-            caracteristicas,
-          }) => (
+          ({ id, imagen, titulo, subtitulo, variantes, span, caracteristicas }) => (
             <div
               key={id}
               className="bg-background flex flex-col space-x-4 rounded-md p-4"
@@ -28,17 +20,13 @@ export default function Combos() {
                 alt=""
               />
               <div className="mt-4">
-                <h1 className="text-center text-xl font-semibold text-primary">
-                  {titulo}
-                </h1>
-                <h2 className="text-center text-base font-semibold text-primary">
-                  {subtitulo}
-                </h2>
+                <h1 className="text-center text-2xl font-bold text-primary">{titulo}</h1>
+                <h2 className="text-center text-base font-semibold text-primary">{subtitulo}</h2>
               </div>
 
               {span && Object.keys(span).length > 0 && (
                 <div className="absolute right-[36px] mt-2 px-4 py-1 rounded-l-md bg-white">
-                  <span className="font-bold text-secondary">{span}</span>
+                  <span className="font-extrabold text-secondary">{span}</span>
                 </div>
               )}
 
@@ -48,7 +36,7 @@ export default function Combos() {
                 <ul className="list-disc list-inside">
                   {Object.values(variantes).map((variante, index) => (
                     <li className="list-none pl-2" key={index}>
-                      {variante}
+                      - {variante}
                     </li>
                   ))}
                 </ul>
