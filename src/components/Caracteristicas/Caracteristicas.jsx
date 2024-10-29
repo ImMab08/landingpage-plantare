@@ -3,26 +3,26 @@ import { info } from "./config/info";
 
 export default function Caracteristicas() {
   return (
-    <div className="p-5 space-y-8 text-primary">
+    <div className="p-5 space-y-8 text-primary md:flex md:flex-col md:justify-center md:px-[400px] md:text-center">
       {info.map((section, index) => (
-        <div key={index} className="space-y-2">
+        <div key={index} className="space-y-2 md:text-center">
           {section.category && (
-            <h2 className="text-2xl font-bold">{section.category}</h2>
+            <h2 className="text-2xl font-bold md:text-center">{section.category}</h2>
           )}
 
           {section.items && (
             <ul className="">
               {section.items.map((item) => (
-                <li key={item.id} className="flex items-start space-x-2">
-                  <span className="font-semibold">{item.name}:</span>
-                  <span>{item.description}</span>
+                <li key={item.id} className="flex items-start md:justify-center space-x-2 md:text-center">
+                  <span className="flex items-center justify-center font-semibold md:text-center">{item.name}:</span>
+                  <span className="flex items-center justify-center md:text-center">{item.description}</span>
                 </li>
               ))}
             </ul>
           )}
 
           {section.section && (
-            <h2 className="text-2xl font-bold">{section.section}</h2>
+            <h2 className="text-2xl font-bold md:text-center">{section.section}</h2>
           )}
 
           {section.steps && (

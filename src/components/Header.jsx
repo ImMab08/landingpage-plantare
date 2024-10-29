@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <div className="flex w-full py-2 items-center justify-center bg-foreground">
-        <h2 className="font-extrabold text-sm md:text-xl text-white">
+        <h2 className="font-extrabold text-sm md:text-xl text-white text-center">
           ENVIÓS <span className="text-secondary">GRATIS</span> + PAGO
           <span className="text-secondary"> CONTRAENTREGA</span> en{" "}
           <span className="text-secondary">CALI</span>
