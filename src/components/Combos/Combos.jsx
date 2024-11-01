@@ -13,12 +13,12 @@ export default function Combos() {
             ({ id, imagen, titulo, subtitulo, variantes, span, caracteristicas }) => (
               <div
                 key={id}
-                className="bg-background flex flex-col space-x-4 rounded-md p-4 relative"
+                className="bg-background flex flex-col space-x-4 rounded-md p-4 relative w-full h-auto"
               >
                 <Image
-                  style={{ borderRadius: 10, objectFit: "cover" }}
-                  width={400}
+                  width={450}
                   height={200}
+                  style={{ maxWidth: 'auto', height: 'auto', borderRadius: 10, objectFit: 'cover' }}
                   src={imagen}
                   alt=""
                 />

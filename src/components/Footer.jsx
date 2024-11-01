@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { IconFacebook, IconInstagram, IconTikTok } from "@/icons";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+
+import { IconFacebook, IconInstagram, IconTikTok } from "@/icons";
 
 export default function Footer() {
   return (

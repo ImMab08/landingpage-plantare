@@ -14,8 +14,8 @@ export default function Caracteristicas() {
             <ul className="">
               {section.items.map((item) => (
                 <li key={item.id} className="flex items-start md:justify-center space-x-2 md:text-center">
-                  <span className="flex items-center justify-center text-sm font-semibold md:text-center">{item.name}:</span>
-                  <span className="flex items-center justify-center text-xs md:text-center">{item.description}</span>
+                  <span className="flex items-center justify-center text-sm md:text-base font-semibold md:text-center">{item.name}:</span>
+                  <span className="flex items-center justify-center text-xs md:text-base md:text-center">{item.description}</span>
                 </li>
               ))}
             </ul>
@@ -30,7 +30,7 @@ export default function Caracteristicas() {
               {section.steps.map((step) => (
                 <li key={step.id}>
                   <span className="font-semibold">{step.title}: </span>
-                  <ul className="text-sm pl-5 list-disc list-inside">
+                  <ul className="text-sm md:text-base pl-5 list-disc list-inside">
                     {step.description.map((desc, idx) => (
                       <li key={idx}>{desc}</li>
                     ))}
@@ -46,7 +46,7 @@ export default function Caracteristicas() {
               <ul className="space-y-1">
                 {section.frequency.map((freq, idx) => (
                   <li key={idx}>
-                    <span className="text-sm font-semibold">{freq.level}:</span>{" "}
+                    <span className="text-sm md:text-base font-semibold">{freq.level}:</span>{" "}
                     {freq.description}
                   </li>
                 ))}
@@ -59,7 +59,7 @@ export default function Caracteristicas() {
               <h3 className="font-semibold text-lg">Aplicación en 3 pasos:</h3>
               <ol className="list-decimal list-inside space-y-1">
                 {section.applicationSteps.map((step) => (
-                  <li className="text-sm" key={step.id}>{step.step}</li>
+                  <li className="text-sm md:text-base" key={step.id}>{step.step}</li>
                 ))}
               </ol>
             </div>
@@ -70,7 +70,7 @@ export default function Caracteristicas() {
               <h3 className="font-semibold text-lg">Resultados Esperados:</h3>
               <ul className="space-y-1">
                 {section.timeline.map((result, idx) => (
-                  <li className="text-sm" key={idx}>
+                  <li className="text-sm md:text-base" key={idx}>
                     <span className="font-semibold">{result.month}:</span>{" "}
                     {result.result}
                   </li>
@@ -82,7 +82,7 @@ export default function Caracteristicas() {
           {section.details && (
             <div>
               <h3 className="font-semibold text-lg">Compatible con:</h3>
-              <ul className="text-sm list-disc list-inside space-y-1">
+              <ul className="text-sm md:text-base list-disc list-inside space-y-1">
                 {section.details.map((detail, idx) => (
                   <li key={idx}>{detail}</li>
                 ))}
@@ -93,7 +93,7 @@ export default function Caracteristicas() {
           {section.precautions && (
             <div>
               <h3 className="font-semibold text-lg">Importante:</h3>
-              <ul className="text-sm list-disc list-inside space-y-1">
+              <ul className="text-sm md:text-base list-disc list-inside space-y-1">
                 {section.precautions.map((precaution, idx) => (
                   <li key={idx}>{precaution}</li>
                 ))}
@@ -104,7 +104,7 @@ export default function Caracteristicas() {
           {section.benefits && (
             <div>
               <h3 className="font-semibold text-lg">Cada compra incluye:</h3>
-              <ul className="text-sm list-disc list-inside space-y-1">
+              <ul className="text-sm md:text-base list-disc list-inside space-y-1">
                 {section.benefits.map((benefit, idx) => (
                   <li key={idx}>{benefit}</li>
                 ))}
