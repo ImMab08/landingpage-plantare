@@ -87,7 +87,7 @@ export default function Home() {
         </div>
 
         <button className="py-2 w-full bg-secondary hover:bg-secondary/80 font-extrabold rounded-md text-white">
-          <Link target="_blank" href="https://wa.me/573116576320">¡QUIERO LO MIO!</Link>
+          <Link target="_blank" href="https://wa.me/573116576320">¡QUIERO EL MIO!</Link>
         </button>
       </div>
 
