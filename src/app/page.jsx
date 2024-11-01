@@ -15,7 +15,7 @@ export default function Home() {
     <section className="flex flex-1 flex-col space-y-10">
       <div className="md:px-[200px] space-y-10 md:flex md:flex-col md:items-center md:justify-center">
         <div className=" flex flex-col items-center space-y-5">
-          <div className="text-center mt-10 space-y-4 px-5">
+          <div className="text-center mt-10 space-y-4 px-4">
             <div className="">
               <p className="text-primary font-extrabold text-xl md:text-4xl leading-7 md:w-[800px]">
                 60 días para decirle ADIÓS a la caída y hola a un cabello fuerte
@@ -103,7 +103,7 @@ export default function Home() {
         </h2>
       </div>
 
-      <div className="text-center space-y-5 flex flex-col items-center">
+      <div className="text-center space-y-5 flex flex-col items-center px-5">
         <p className="text-primary font-bold text-xl md:text-2xl md:w-[780px] leading-6">
           Es un aceite de estimulación capilar 100% natural que combina
           ancestrales secretos botánicos con la más avanzada tecnología en

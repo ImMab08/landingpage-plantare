@@ -19,17 +19,17 @@ export default function Footer() {
             />
           </a>
           <ul className="flex mb-6 text-sm space-x-4">
-            <li>
+            <li className="flex items-center justify-center">
               <Link target="_blank" href="https://www.facebook.com/profile.php?id=100083206418670" className="">
                 <IconFacebook />
               </Link>
             </li>
-            <li>
+            <li className="flex items-center justify-center">
               <Link target="_blank" href="https://www.instagram.com/plantarebyemi/" className="">
                 <IconInstagram />
               </Link>
             </li>
-            <li>
+            <li className="flex items-center justify-center">
               <Link target="_blank" href="https://www.tiktok.com/@plantarebyemi" className="">
                 <IconTikTok />
               </Link>
