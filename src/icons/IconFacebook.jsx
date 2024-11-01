@@ -4,30 +4,23 @@ export function IconFacebook(props) {
   return (
     <svg
       {...props}
-      width="32px"
+      fill="#341F10"
       height="32px"
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      width="32px"
+      version="1.1"
+      id="Layer_1"
+      viewBox="-143 145 512 512"
     >
-      <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
-      <path
-        d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
-        fill="white"
-      />
-      <defs>
-        <linearGradient
-          id="paint0_linear_87_7208"
-          x1="16"
-          y1="2"
-          x2="16"
-          y2="29.917"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#18ACFE" />
-          <stop offset="1" stopColor="#0163E0" />
-        </linearGradient>
-      </defs>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3 v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2 c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"></path>{" "}
+      </g>
     </svg>
   );
 }

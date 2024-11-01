@@ -1,12 +1,14 @@
-import Beneficios from "@/components/Beneficios/Beneficios";
-import Button from "@/components/Button";
-import Caracteristicas from "@/components/Caracteristicas/Caracteristicas";
-import Combos from "@/components/Combos/Combos";
+import Link from "next/link";
+import Image from "next/image";
+
 import Footer from "@/components/Footer";
+import Button from "@/components/Button";
+import Combos from "@/components/Combos/Combos";
 import Garantia from "@/components/Garantia/Garantia";
 import Preguntas from "@/components/Preguntas/Preguntas";
+import Beneficios from "@/components/Beneficios/Beneficios";
 import Testimonios from "@/components/Testimonios/Testimonios";
-import Link from "next/link";
+import Caracteristicas from "@/components/Caracteristicas/Caracteristicas";
 
 export default function Home() {
   return (
@@ -38,8 +40,17 @@ export default function Home() {
             <Link target="_blank" href="https://wa.me/573116576320">¡ACTIVA TU CRECIMIENTO AHORA!</Link>
           </button>
         </div>
-
-        <div></div>
+        
+          <Image 
+            width={1020} 
+            height={500}
+            style={{
+              maxWidth: '100%',
+              height: 'auto',
+              objectFit: 'cover'
+            }}
+            src="/img/hero.jpeg" 
+            alt="Imagen de presetación de los aceites de estimulación de plantare" />
 
         <div className="px-5 md:px-0">
           <Button />

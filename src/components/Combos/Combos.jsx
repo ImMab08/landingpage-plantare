@@ -1,6 +1,7 @@
 import React from "react";
-import { info } from "./config/info";
 import Image from "next/image";
+
+import { info } from "./config/info";
 
 export default function Combos() {
   return (
@@ -15,9 +16,9 @@ export default function Combos() {
                 className="bg-background flex flex-col space-x-4 rounded-md p-4 relative"
               >
                 <Image
-                  style={{ objectFit: "contain" }}
-                  width={500}
-                  height={500}
+                  style={{ borderRadius: 10, objectFit: "cover" }}
+                  width={400}
+                  height={200}
                   src={imagen}
                   alt=""
                 />

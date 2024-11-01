@@ -11,7 +11,7 @@ export default function Header() {
           <span className="text-secondary">CALI</span>
         </h2>
       </div>
-      <nav className="flex items-center justify-center py-2 border-b-2 border-border">
+      <nav className="flex items-center justify-center py-2 shadow-md">
         <Image className="block md:hidden" width={130} height={130} src="/logo.png" alt="logo-plantare" />
         <Image className="hidden md:block" width={230} height={230} src="/logo.png" alt="logo-plantare" />
       </nav>

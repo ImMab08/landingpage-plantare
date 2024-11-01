@@ -3,7 +3,7 @@ export const info = [
     id: 1,
     titulo: "Inicio de Transformación",
     subtitulo: "PACK BÁSICO - 1 ACEITE ($40.000)",
-    imagen: "/img/Imagen1.jpg",
+    imagen: "/img/Combo1.jpeg",
     variantes: {
       variante1: "Kit Despertar del Cabello",
       variante2: "Experiencia Inicial de Crecimiento",
@@ -16,7 +16,7 @@ export const info = [
     id: 2,
     titulo: "Poder Duplicado",
     subtitulo: "PACK POPULAR - 2 ACEITES ($60.000)",
-    imagen: "/img/Imagen2.jpg",
+    imagen: "/img/Combo2.jpeg",
     variantes: {
       variante1: "Dúo Transformador",
       variante2: "Kit Crecimiento ",
@@ -36,7 +36,7 @@ export const info = [
     id: 3,
     titulo: "Transformación Total",
     subtitulo: "PACK PREMIUM - 3 ACEITES ($80.000)",
-    imagen: "/img/Imagen3.jpg",
+    imagen: "/img/Combo3.jpeg",
     variantes: {
       variante1: "Kit Resultados Garantizados.",
       variante2: "Trilogía del Crecimiento.",
