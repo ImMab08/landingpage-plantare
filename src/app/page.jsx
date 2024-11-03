@@ -49,8 +49,9 @@ export default function Home() {
             style={{ borderRadius: 20 }}
             width={380}
             height={240}
-            preload="none"
+            preload="auto"
             autoPlay
+            playsInline
             loop
             muted
           >
