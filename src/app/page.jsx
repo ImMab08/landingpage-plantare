@@ -84,7 +84,7 @@ export default function Home() {
       <div className="flex w-full items-center justify-center bg-foreground">
         <h2 className="font-extrabold text-sm md:text-xl text-white text-center">
           ENVIÓS <span className="text-secondary">GRATIS</span> + PAGO
-          <span className="text-secondary"> CONTRAENTREGA</span> en{" "}
+          <span className="text-secondary"> CONTRAENTREGA</span> SOLO EN{" "}
           <span className="text-secondary">CALI</span>
         </h2>
       </div>
@@ -115,7 +115,7 @@ export default function Home() {
       </div>
 
       <div className="flex w-full items-center justify-center bg-foreground px-5 py-2">
-        <h2 className="font-extrabold text-xs text-white text-center">
+        <h2 className="font-extrabold text-XL text-white text-center">
           ¿Qué es el{" "}
           <span className="text-secondary">
             {" "}
