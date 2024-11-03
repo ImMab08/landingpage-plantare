@@ -28,8 +28,8 @@ export const info = [
         "⭐️ 2 meses de tratamiento.",
       caracteristica2:
         "💰 Ahorras $ 20.000",
-      caracteristica3:
-        "🎁 BONUS: Guía + Calendario de seguimiento.",
+      // caracteristica3:
+      //   "🎁 BONUS: Guía + Calendario de seguimiento.",
     },
   },
   {
@@ -48,8 +48,8 @@ export const info = [
         "⭐️ 3 meses de resultados completos.",
       caracteristica2:
         "💰 Ahorras $ 40.000",
-      caracteristica3:
-        "🎁 BONUS: Guía + Calendario + Consulta personalizada.",
+      // caracteristica3:
+      //   "🎁 BONUS: Guía + Calendario + Consulta personalizada.",
     },
   },
 ];

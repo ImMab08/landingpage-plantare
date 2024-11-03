@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-primary/80 font-semibold text-sm md:text-lg">
-                Fórmula natural que entiende y potencia tu cabello afro.
+                Fórmula natural que entiende y potencia tu cabello.
               </p>
               <span className="text-primary/80 font-semibold text-sm md:text-lg md:w-[50px] leading-3">
                 Resultados visibles desde el primer mes o te devolvemos tu
@@ -37,20 +37,41 @@ export default function Home() {
           </div>
 
           <button className="py-3 w-auto px-6 md:py-4 md:px-6 text-lg md:text-xl bg-secondary hover:bg-secondary/80 font-extrabold rounded-md text-white">
-            <Link target="_blank" href="https://wa.me/573116576320">¡ACTIVA TU CRECIMIENTO AHORA!</Link>
+            <Link target="_blank" href="https://wa.me/573116576320">
+              ¡ACTIVA TU CRECIMIENTO AHORA!
+            </Link>
           </button>
         </div>
-        
-          <Image 
-            width={1020} 
-            height={500}
-            style={{
-              maxWidth: '100%',
-              height: 'auto',
-              objectFit: 'cover'
-            }}
-            src="/img/hero.jpeg" 
-            alt="Imagen de presetación de los aceites de estimulación de plantare" />
+
+        <div className="w-full h-full flex flex-col items-center justify-center px-5">
+          <video
+            className=" shadow-2xl"
+            style={{ borderRadius: 20 }}
+            width={380}
+            height={240}
+            preload="none"
+            autoPlay
+            loop
+            muted
+          >
+            <source src="/video/video.mp4" type="video/mp4" />
+            <track />
+          </video>
+        </div>
+
+        <Image
+          width={1200}
+          height={500}
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+            objectFit: "cover",
+          }}
+          src="/img/hero.jpeg"
+          alt="Imagen de presetación de los aceites de estimulación de plantare"
+        />
+
+        <Testimonios />
 
         <div className="px-5 md:px-0">
           <Button />
@@ -60,7 +81,7 @@ export default function Home() {
       </div>
 
       <Combos />
-      <div className="flex w-full py-2 items-center justify-center bg-foreground">
+      <div className="flex w-full items-center justify-center bg-foreground">
         <h2 className="font-extrabold text-sm md:text-xl text-white text-center">
           ENVIÓS <span className="text-secondary">GRATIS</span> + PAGO
           <span className="text-secondary"> CONTRAENTREGA</span> en{" "}
@@ -87,7 +108,9 @@ export default function Home() {
         </div>
 
         <button className="py-2 w-full bg-secondary hover:bg-secondary/80 font-extrabold rounded-md text-white">
-          <Link target="_blank" href="https://wa.me/573116576320">¡QUIERO EL MIO!</Link>
+          <Link target="_blank" href="https://wa.me/573116576320">
+            ¡QUIERO EL MIO!
+          </Link>
         </button>
       </div>
 
@@ -121,7 +144,6 @@ export default function Home() {
 
       <Caracteristicas />
       <Garantia />
-      <Testimonios />
       <Preguntas />
       <Footer />
     </section>

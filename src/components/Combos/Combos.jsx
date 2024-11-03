@@ -2,15 +2,26 @@ import React from "react";
 import Image from "next/image";
 
 import { info } from "./config/info";
+import Link from "next/link";
 
 export default function Combos() {
   return (
     <section className="">
       <div className="bg-border p-5 md:px-5 md:py-10">
-        <p className="text-primary font-extrabold text-center text-2xl md:text-4xl py-5">CONOCE NUESTROS PAQUETES</p>
+        <p className="text-primary font-extrabold text-center text-2xl md:text-4xl py-5">
+          CONOCE NUESTROS PAQUETES
+        </p>
         <div className="md:flex md:space-y-0 md:space-x-5 md:px-10 space-y-5">
           {info.map(
-            ({ id, imagen, titulo, subtitulo, variantes, span, caracteristicas }) => (
+            ({
+              id,
+              imagen,
+              titulo,
+              subtitulo,
+              variantes,
+              span,
+              caracteristicas,
+            }) => (
               <div
                 key={id}
                 className="bg-background flex flex-col space-x-4 rounded-md p-4 relative w-full h-auto"
@@ -18,7 +29,12 @@ export default function Combos() {
                 <Image
                   width={450}
                   height={200}
-                  style={{ maxWidth: 'auto', height: 'auto', borderRadius: 10, objectFit: 'cover' }}
+                  style={{
+                    maxWidth: "auto",
+                    height: "auto",
+                    borderRadius: 10,
+                    objectFit: "cover",
+                  }}
                   src={imagen}
                   alt=""
                 />
@@ -66,6 +82,12 @@ export default function Combos() {
                     </ul>
                   </div>
                 )}
+
+                <button className="mt-5 py-2 w-auto bg-secondary hover:bg-secondary/80 font-extrabold rounded-md text-white">
+                  <Link target="_blank" href="https://wa.me/573116576320">
+                    ¡QUIERO EL MIO!
+                  </Link>
+                </button>
               </div>
             )
           )}
