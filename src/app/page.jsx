@@ -82,12 +82,13 @@ export default function Home() {
       </div>
 
       <Combos />
-      <div className="flex w-full items-center justify-center bg-foreground">
+      <div className="flex w-full flex-col py-2 items-center justify-center bg-foreground">
         <h2 className="font-extrabold text-sm md:text-xl text-white text-center">
           ENVIÓS <span className="text-secondary">GRATIS</span> + PAGO
-          <span className="text-secondary"> CONTRAENTREGA</span> SOLO EN{" "}
+          <span className="text-secondary"> CONTRAENTREGA</span> EN{" "}
           <span className="text-secondary">CALI</span>
         </h2>
+        <h2 className="text-secondary text-xs font-semibold">PROMOCIÓN VALIDA SOLO PARA LA CIUDAD DE CALI</h2>
       </div>
 
       <div className=" flex flex-col justify-center items-center space-y-5 px-5">
